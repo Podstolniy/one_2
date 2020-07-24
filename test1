@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
+gruz = 9
+const = 0
+c = [const, gruz]
+
+def massa_g(c):
+    if gruz == 0:
+        return (print('net kombinaciy'))
+    if c[0] <= c[1] :
+        print(c[0], c[1])
+        c[0] += 1
+        c[1] -= 1
+        return (massa_g(c))
+
+def main():
+    massa_g(c)
+    
+if __name__ == '__main__':
+    main()
